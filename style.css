@@ -1,0 +1,55 @@
+.icon {
+    image-rendering: pixelated;
+    width: 192px;
+    height: 64px;
+}
+body {
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    background-image: url('image/background.png');
+    font-family: "serif";
+    height:100%;
+}
+html{
+    height:90%;
+}
+.sc{
+    display:flex;
+}
+.main{
+    margin-left: 25%;
+    margin-right: 25%;
+    background-image: url('image/background2.png');
+    border-color: black;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-style: outset;
+    height:100%;
+}
+h1{
+    color:white;
+}
+h2{
+    color:white;
+}
+p{
+    color:white;
+}
+.icon{
+    margin-left:10%;
+}
+.main_content{
+    margin-left:5%;
+    margin-top: 5%;
+}
+.header{
+    background-image: url('image/background2.png');
+}
+button{
+    float:right;
+    margin-right: 10%;
+    scale: 200%;
+}
+input{
+    scale: 130%;
+}

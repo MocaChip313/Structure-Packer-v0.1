@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minecraft Structure Packer</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+        <script src="main.js"></script>
+        <meta charset="utf-8">
+        <link rel="icon" href="image/favicon.png">
+    </head>
+    <body>
+        <div class="header">
+        <img src="image/icon.png" class="icon">
+        </div>
+        <div class="main">
+            <div class="main_content">
+            <h1>Structure Packer</h1>
+            <div class="form">
+            <h2>Structure Name</h2>
+            <input type="text" id="structure_name" placeholder="namespace:mystructure">
+            <h2>Mcstructure File</h2>
+            <input type="file" id="mcstructure">
+            <h2>Generations per a Chunk</h2>
+            <input type="number" id="iterations" value="1">
+            <h2>Scatter Chance</h2>
+            <div class="sc">
+            <input type="number" id="sc" nowrap value="100">
+            <p>%</p>
+            </div>
+            <h2>Biome</h2>
+            <select name="biomes" id="biome">
+                <option value="overworld" selected>Overworld</option>
+                <option value="nether">Nether</option>
+                <option value="the_end">The End</option>
+                <option value="cave">Cave</option>
+                <option value="plains">Plains</option>
+                <option value="snow">Snowy Plains</option>
+                <option value="forest">Forest</option>
+                <option value="swamp">Swamp</option>
+                <option value="jungle">Jungle</option>
+                <option value="darkforest">Dark Forest</option>
+                <option value="desert">Desert</option>
+                <option value="badlands">Badlands</option>
+                <option value="taiga">Taiga</option>
+                <option value="savanna">Savanna</option>
+                <option value="beach">Beach</option>
+                <option value="mountains">Mountains</option>
+                <option value="ocean">Ocean</option>
+                <option value="cherrygrove">Cherry Grove</option>
+                <option value="mushroom">Mushroom Islands</option>
+                <option value="netherwastes">Nether Wastes</option>
+                <option value="crimsonforest">Crimson Forest</option>
+                <option value="warpedforest">Warped Forest</option>
+                <option value="soulsandvalley">Soulsand Valley</option>
+                <option value="basalt_deltas">Basalt Deltas</option>
+            </select>
+            <br>
+            <h2>Addon Name</h2>
+            <input type="text" id="addon_name">
+            <h2>Addon Description</h2>
+            <input type="text" id="addon_description">
+            <h2>Pack Icon</h2>
+            <input type="file" id="pack_icon">
+            <br>
+            <br>
+            <br>
+            <button id="submit">Pack the Structure</button>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
